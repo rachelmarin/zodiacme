@@ -1,8 +1,11 @@
-const Home = () => {
-    let name = 'mario'
+import { useState } from 'react';
+
+    const Home = () => {
+    //let name = 'mario'
+    const [name, setName] = useState('mario');
 
   const handleClick = () => {
-    console.log('Hello, Beautiful!');
+    setName('luigi');
   }  
 
     return (
